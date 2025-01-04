@@ -1,5 +1,6 @@
 
 # Monitor Input Switcher
+python -m PyInstaller --onefile --windowed --icon=icon.ico monitor_switcher_tray_hotkey.py
 
 This application allows you to toggle between HDMI and VGA monitor inputs using a system tray icon and a hotkey.
 
@@ -24,13 +25,13 @@ This application allows you to toggle between HDMI and VGA monitor inputs using 
    ```
 3. Run the script:
    ```bash
-   python monitor_switcher_tray_hotkey.py
+   python pythonKVM.py
    ```
 
 ### Building a Standalone Executable
 Use PyInstaller to create a standalone `.exe`:
 ```bash
-pyinstaller --onefile --windowed monitor_switcher_tray_hotkey.py
+python -m PyInstaller --onefile --windowed --icon=icon.ico pythonKVM.py
 ```
 
 ## Requirements
